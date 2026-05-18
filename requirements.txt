@@ -1,0 +1,20 @@
+# Core ML stack
+torch>=2.5.0
+transformers>=4.46.0
+accelerate>=0.30.0
+bitsandbytes>=0.43.0     # 4-bit quantization for 70B-class models
+
+# Numerics / data
+numpy>=1.26
+pandas>=2.2
+scipy>=1.13
+scikit-learn>=1.4        # used by unified_repr.py probing
+
+# Utilities
+tqdm>=4.66
+lingua-language-detector>=2.0.0   # token-level language tagging in incas.py
+
+# Tested versions (reference, not pinned):
+#   torch 2.5.1+cu121
+#   transformers 4.46.x
+#   Python 3.10
